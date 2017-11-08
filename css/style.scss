@@ -1,0 +1,268 @@
+@charset "UTF-8";
+@media screen and (min-width: 320px) {
+  html {
+    font-size: 50px;
+  }
+}
+
+@media screen and (min-width: 360px) {
+  html {
+    font-size: 56.25px;
+  }
+}
+
+@media screen and (min-width: 375px) {
+  html {
+    font-size: 58.59375px;
+  }
+}
+
+@media screen and (min-width: 384px) {
+  html {
+    font-size: 60px;
+  }
+}
+
+@media screen and (min-width: 412px) {
+  html {
+    font-size: 64.375px;
+  }
+}
+
+@media screen and (min-width: 414px) {
+  html {
+    font-size: 64.6875px;
+  }
+}
+
+@media screen and (min-width: 460px) {
+  html {
+    font-size: 71.875px;
+  }
+}
+
+@media screen and (min-width: 540px) {
+  html {
+    font-size: 84.375px;
+  }
+}
+
+@media screen and (min-width: 640px) {
+  html {
+    font-size: 100px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  html {
+    font-size: 120px;
+  }
+}
+
+body, ul, li, p, pre, dd, dt, dl, h1, h2, h3, h4, h5, h6, figure {
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: '微软雅黑';
+  background:url(../images/dali_bg.png) no-repeat center;
+  background-size: 100% 100%;
+}
+
+ul, li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: normal;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.clear-float::after {
+   content: '';
+   display: block;
+   clear: both;
+}
+
+.text-hidden-line {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.container {
+  max-width: 640px;
+  padding-bottom: 0;
+  margin: 0 auto;
+  min-height: 100%;
+  min-width: 320px;
+  padding: .3rem 0;
+}
+
+.dali_title {
+  width: 100%;
+  .title {
+    width: 100%;
+    height: 2rem;
+    img {
+      width: 80%;
+      display: block;
+      margin: 0 auto;
+    }
+  }
+  .user-info {
+    height: 1.2rem;   
+    font-size: .3rem;
+    color: #333232;
+    font-weight: bold;
+    margin-top: .6rem;
+    img {
+      height: 100%;
+      border-radius: 50%;
+    }
+    span {
+      display: inline-block;
+      height: 100%;
+      line-height: 1.2rem;
+      position: relative;
+      top: -.4rem;
+      margin-left: .2rem;
+    }
+  }
+}
+
+.users-wrapper {
+  width: 100%;
+  background: url(../images/dali_user.png) no-repeat center;
+  background-size: 100% 100%;
+  padding-top: 1rem;
+  .user-bg {
+    width: 100%;
+    padding: 1.7rem .8rem;
+    height: 9rem;
+    /*padding-top: 1rem;*/
+    background: url(../images/list_bg.png) no-repeat center;
+    background-size: 100% 100%;
+    .users-null {
+       width: 100%;
+       height: 4rem;
+       background: url(../images/null.png) no-repeat center;
+       background-size: 100% auto;
+       text-align: center;
+       font-size: .34rem;
+       color: #f73438;
+       display: none;
+       label {
+        margin-top: 1.2rem;
+        display: inline-block;
+       }
+       span {
+        color: #a76f14;
+       }
+    }
+    ul {
+      height: 3.9rem;
+      overflow-y: auto; 
+    }
+    li {
+      font-size: .24rem;
+      color: #492409;
+      line-height: .45rem;
+      span {
+        display: block;
+        width: calc(100%/3);
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        float: left;
+        text-align: center;
+        i {
+          display: inline-block;
+          width: .3rem;
+          font-style: normal;
+        }
+      }
+      span:first-child {
+        text-align: left;
+      }
+    }
+  }
+}
+
+.actives-rules {
+  padding: .4rem .2rem;
+  padding-top: 0;
+  width: 90%;
+  margin: 0 auto;
+  margin-top: .6rem;
+  background: url(../images/rules_bg.png) no-repeat center;
+  background-size: 100% 100%;
+  dt {
+    height: 1rem;
+    line-height: 1rem;
+    font-size: .3rem;
+    color: #fff;
+    text-align: center;
+    margin-bottom: .4rem;
+  }
+  dd {
+    width: 100%;
+    padding: 0 .3rem;
+    font-size: .24rem;
+    color: #492409;
+    line-height: .5rem;
+    margin: 0;
+  }
+  dd:last-child {
+    text-align: center;
+    margin-top: .8rem;
+  }
+}
+
+.code-wrapper {
+  width: 100%;
+  text-align: center;
+  font-size: .28rem;
+  color: #333;
+  margin-top: .6rem;
+  img {
+    display: block;
+    width: 50%;
+    margin: 0 auto;
+  }
+  p {
+    margin: .15rem 0;
+    margin-bottom: 0;
+  }
+}
+
+.share-wrapper {
+  width: 100%;
+  margin-top: .3rem;
+  button {
+    width: 50%;
+    height: .8rem;
+    background: url(../images/button.png);
+    background-size: 100% 100%;
+    color: #333;
+    font-weight: bold;
+    font-size: .3rem;
+    border: 0;
+    outline: none;
+    display: block;
+    margin: 0 auto;
+  }
+}

@@ -1,0 +1,389 @@
+@charset "UTF-8";
+@media screen and (min-width: 320px) {
+  html {
+    font-size: 50px;
+  }
+}
+
+@media screen and (min-width: 360px) {
+  html {
+    font-size: 56.25px;
+  }
+}
+
+@media screen and (min-width: 375px) {
+  html {
+    font-size: 58.59375px;
+  }
+}
+
+@media screen and (min-width: 384px) {
+  html {
+    font-size: 60px;
+  }
+}
+
+@media screen and (min-width: 412px) {
+  html {
+    font-size: 64.375px;
+  }
+}
+
+@media screen and (min-width: 414px) {
+  html {
+    font-size: 64.6875px;
+  }
+}
+
+@media screen and (min-width: 460px) {
+  html {
+    font-size: 71.875px;
+  }
+}
+
+@media screen and (min-width: 540px) {
+  html {
+    font-size: 84.375px;
+  }
+}
+
+@media screen and (min-width: 640px) {
+  html {
+    font-size: 100px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  html {
+    font-size: 120px;
+  }
+}
+
+body, ul, li, p, pre, dd, dt, dl, h1, h2, h3, h4, h5, h6, figure {
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: '微软雅黑';
+  background: url(../images/dali_bg.png) no-repeat center;
+  background-size: 100% 100%;
+}
+
+ul, li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: normal;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.clear-float::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.text-hidden-line {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.container {
+  max-width: 640px;
+  padding-bottom: 0;
+  margin: 0 auto;
+  min-height: 100%;
+  min-width: 320px;
+  padding: .3rem 0;
+}
+
+.dali_title {
+  width: 100%;
+}
+
+.dali_title .title {
+  width: 100%;
+  height: 2rem;
+}
+
+.dali_title .title img {
+  width: 80%;
+  display: block;
+  margin: 0 auto;
+}
+
+.dali_title .user-info {
+  height: 1.2rem;
+  font-size: .3rem;
+  color: #333232;
+  font-weight: bold;
+  margin-top: .6rem;
+}
+
+.dali_title .user-info img {
+  height: 100%;
+  border-radius: 50%;
+}
+
+.rank {
+  display: inline-block;
+  position: relative;
+  top: -.25rem;
+  margin-left: .1rem;
+}
+.dali_title .user-info span {
+  margin: .1rem 0;
+  display: block;
+  width: 100%;
+  height: .4rem;
+  position: relative;
+  text-align: left;
+  font-size: .22rem;
+  
+}
+
+.dali_title .user-info .rank span:first-child {
+  font-size: .27rem;
+  font-weight: bold;
+}
+
+
+.users-wrapper {
+  width: 100%;
+  background: url(../images/dali_user.png) no-repeat center;
+  background-size: 100% 100%;
+  padding-top: 1rem;
+}
+
+.users-wrapper .user-bg {
+  width: 100%;
+  padding: 1.7rem .8rem;
+  height: 9rem;
+  /*padding-top: 1rem;*/
+  background: url(../images/list_bg.png) no-repeat center;
+  background-size: 100% 100%;
+}
+
+.users-wrapper .user-bg .users-null {
+  width: 100%;
+  height: 4rem;
+  background: url(../images/null.png) no-repeat center;
+  background-size: 100% auto;
+  text-align: center;
+  font-size: .34rem;
+  color: #f73438;
+  display: none;
+}
+
+.users-wrapper .user-bg .users-null label {
+  margin-top: 1.2rem;
+  display: inline-block;
+}
+
+.users-wrapper .user-bg .users-null span {
+  color: #a76f14;
+}
+
+.users-wrapper .user-bg ul {
+  height: 3.9rem;
+  overflow-y: auto;
+}
+
+.users-wrapper .user-bg li {
+  font-size: .24rem;
+  color: #492409;
+  line-height: .45rem;
+}
+
+.users-wrapper .user-bg li span {
+  display: block;
+  width: calc(100%/3);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  float: left;
+  text-align: center;
+}
+
+.users-wrapper .user-bg li span i {
+  display: inline-block;
+  width: .3rem;
+  font-style: normal;
+}
+
+.users-wrapper .user-bg li span:first-child {
+  text-align: left;
+  width: 10%;
+}
+
+.users-wrapper .user-bg li span:last-child {
+  width: 54%;
+  float: right;
+  text-align: left;
+  padding-left: .3rem;
+}
+
+.actives-rules {
+  padding: .4rem .2rem;
+  padding-top: 0;
+  width: 90%;
+  margin: 0 auto;
+  margin-top: .6rem;
+  background: url(../images/rules_bg.png) no-repeat center;
+  background-size: 100% 100%;
+}
+
+.actives-rules dt {
+  height: 1.3rem;
+  line-height: 1.3rem;
+  font-size: .3rem;
+  color: #fff;
+  text-align: center;
+  margin-bottom: .4rem;
+}
+
+.actives-rules dd {
+  width: 100%;
+  padding: 0 .3rem;
+  font-size: .24rem;
+  color: #492409;
+  line-height: .4rem;
+  margin: 0;
+}
+
+.actives-rules dd:last-child {
+  text-align: center;
+  margin-top: .4rem;
+}
+
+.code-wrapper {
+  width: 100%;
+  text-align: center;
+  font-size: .28rem;
+  color: #333;
+  margin-top: .6rem;
+}
+
+.code-wrapper img {
+  display: block;
+  width: 50%;
+  margin: 0 auto;
+}
+
+.code-wrapper p {
+  margin: .15rem 0;
+  margin-bottom: 0;
+}
+
+.share-wrapper {
+  width: 100%;
+  margin-top: .3rem;
+}
+
+.share-wrapper button {
+  width: 50%;
+  height: .8rem;
+  background: url(../images/button.png);
+  background-size: 100% 100%;
+  color: #333;
+  font-weight: bold;
+  font-size: .3rem;
+  border: 0;
+  outline: none;
+  display: block;
+  margin: 0 auto;
+}
+
+.active-time {
+  font-size: .24rem;
+  color: #333232;
+  margin-bottom: .1rem;
+  text-align: center;
+  font-weight: bold;
+}
+
+.share-num {
+      text-align: center;
+    font-size: .26rem;
+    color: #333;
+    margin-top: .2rem;
+    position: relative;
+    font-weight: bold;
+    top: .15rem;
+}
+
+.share-num span {
+  color: #FD3538;
+  font-size: .3rem;
+}
+/*share*/
+.share{
+  position: fixed;
+  margin: auto;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 999;
+  background: rgba(0,0,0,0.5);
+  display: none;
+}
+.share-line {
+  width: 20%;
+  height: 2rem;
+  background: url(../images/share_line.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100% auto;
+  position: absolute;
+  right: 8%;
+  top: 0%;
+}
+.share-word {
+  width: 35%;
+  height: 1rem;
+  /*background: url(../images/share_word.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100% auto;*/
+  position: absolute;
+  right: 5%;
+  top: 19%;
+  text-align: center;
+  font-size: .24rem;
+  color: #fff;
+}
+/*share-end*/
+
+.info-tip {
+  width: 100%;
+  height: .6rem;
+  background: rgba(0,0,0,.5);
+  position: fixed;
+  left: 0;
+  top: 0;
+  color: #fff;
+  font-size: .24rem;
+  line-height: .6rem;
+}
+
+.qimo8{ overflow:hidden; width:100%;}
+.qimo8 .qimo {/*width:99999999px;*/width:8000%; height:.6rem;}
+.qimo8 .qimo div{ float:left;}
+.qimo8 .qimo ul{float:left; height:.6rem; overflow:hidden; zoom:1; }
+.qimo8 .qimo ul li{float:left; line-height:.6rem; list-style:none; padding-left: .1rem;}

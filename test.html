@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+    <html>
+        <body>
+            <object
+                classid="clsid:9BE31822-FDAD-461B-AD51-BE1D1C159921"
+                codebase="http://download.videolan.org/pub/videolan/vlc/last/win32/axvlc.cab"
+                id="vlc"
+                name="vlc"
+                class="vlcPlayer"
+                events="True">
+                <param name="Src" value="rtsp://admin:admin12345@113.143.39.90:554/h264/ch1/main/av_stream" />
+                <param name="ShowDisplay" value="True" />
+                <param name="AutoLoop" value="False" />
+                <param name="AutoPlay" value="True" />
+                <embed id="vlcEmb"  type="application/x-google-vlc-plugin" version="VideoLAN.VLCPlugin.2" autoplay="yes" loop="no" width="640" height="480"
+                    target="rtsp://admin:admin12345@113.143.39.90:554/h264/ch1/main/av_stream" ></embed>
+                </objetc>
+        </body>
+    </html>
